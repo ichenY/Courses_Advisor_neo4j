@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Course Advisor</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+    	
+		<div class="row">
+			<div class="col-md-12">
+				<img alt="Course Advisor Logo" src="https://imgur.com/9t2mYh6.png" class="rounded mx-auto d-block">
+				<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" >
+									Warning
+								</h5> 
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body"></div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">
+									Close
+								</button>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h3>
+					Search
+				</h3>
+
+				<form class="form-inline">
+					<div class="dropdown mr-sm-2">
+						 <button class="btn dropdown-toggle" id="dropdownMenu" data-toggle="dropdown"type="button" aria-haspopup="true" aria-expanded="false" >Class Name</button>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+							 <button class="dropdown-item" type="button">University</button> 
+							 <button class="dropdown-item" type="button">Subject</button> 
+							 <button class="dropdown-item" type="button">Courses</button>
+							 <button class="dropdown-item" type="button">Course Number</button>
+						</div>
+					</div>
+
+					<input class="form-control mr-sm-2" type="text" id="keyword" placeholder="Type in keywords"> 
+					<button class="btn btn-primary my-2 my-sm-0" type="submit">
+						Search
+					</button>
+				</form>
+
+				<div class="jumbotron" >
+					<h4>Result</h4>
+					<pre id="result">
+						<table id="table" class="hidden">
+							<tr>
+							    <!-- <th>University</th>
+							    <th>Subject</th> 
+							    <th>Courses</th> -->
+						  	</tr>
+						</table>
+						
+					</pre>
+
+
+				</div>
+			</div>
+
+
+
+
+
+			<div class="col-md-2"></div>
+
+
+
+
+
+		</div>
+	</div>
+
+
+  </body>
+</html>
